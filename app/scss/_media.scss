@@ -1,0 +1,266 @@
+@media (max-width: 1100px) {
+    .portfolio {
+        &__inner {
+            flex-wrap: wrap;
+        }
+        &__images {
+            margin-bottom: 50px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .footer {
+
+
+    }
+
+    .footer-top {
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-bottom: 70px;
+
+        &__title {
+            margin-bottom: 0;
+            max-width: 100%;
+        }
+
+        .arrow-link {
+            display: inline-block;
+            margin-bottom: 80px;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .articles {
+
+        &__items {
+            flex-wrap: wrap;
+        }
+
+        &__item {
+            padding: 15px 0 60px;
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .header__content {
+        min-height: calc(100vh - 110px);
+    }
+
+    .header__top-btn {
+        display: block;
+        
+    }
+
+    .header__menu-blocks {
+        display: none;
+    }
+
+    .header__top-menu {
+
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        background-color: #fff;
+        left: 0;
+        top: -100%;
+        z-index: 2;
+        transition: all .4s;
+        
+    
+    }
+
+    .header__top-btn.active {
+        animation-name: burger;
+        animation-duration: 2s;
+        background-color: #080851;
+
+    }
+
+    .header__top-btn.active span {
+        background-color: #fff;
+        transform: scale(0);
+
+
+    }
+
+    .header__top-btn.active div::before,
+    .header__top-btn.active div::after {
+        background-color: #fff;
+        
+    } 
+        
+
+    .header__top-btn.active div::before {
+        transform: rotate(45deg);
+        bottom: 11px;
+        
+
+    }
+
+    .header__top-btn.active div::after {
+        transform: rotate(-45deg);
+        top: 10px;
+        
+        
+    }
+
+    .header__top-menu.active {
+        top: 0;
+        animation-name: burger;
+        animation-duration: 0.5s;
+    }
+
+    .header__top-btn {
+        position: relative;
+        z-index: 3;
+    }
+
+    .logo {
+        position: relative;
+        z-index: 3;
+    }
+
+    .header__menu--active {
+        display: flex;
+        justify-content: center;
+        padding: 175px 20px;
+        a {
+           margin-bottom: 30px;
+        }
+    }
+
+    .header__content-title {
+        margin-top: 50px;
+        margin-bottom: auto;
+    
+    }
+
+    .vision {
+        height: 511px;
+
+        background-position: right bottom;
+
+        &__inner {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__title {
+            margin-top: 300px;
+        }
+
+        .arrow-link {
+            align-self: flex-start;
+            margin-bottom: 50px;
+        }
+    }
+
+    body.lock {
+        overflow-y: hidden;
+    }
+    
+}
+
+@media (max-width: 600px) {
+
+    .header {
+
+        &__content-title {      
+            font-size: 42px;
+            max-width: 320px;
+        }
+    }
+
+    .portfolio {
+
+
+        &__text {
+            font-size: 26px;
+            max-width: 100%;
+            margin-bottom: 30px;
+        }
+
+        &__images {
+            img {
+                width: 113px;
+                height: 170px;
+                &:last-child {
+                    width: 172px;
+                    height: 282px;
+                }
+            }
+        
+
+
+
+        }
+    }
+
+    .vision {
+        &__title {
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+    }
+
+}
+
+@media (max-width: 500px) {
+    .portfolio {
+
+        &__img {
+            margin-right: 15px;
+            
+        }
+        &__images {
+            margin-left: 0;
+            margin-right: 0;
+            img {
+                &:last-child {
+                    width: 150px;
+                }
+            }
+        }
+
+    }
+
+    .articles {
+
+       &__link {
+        font-size: 26px;
+       }
+
+       &__item-title {
+            font-size: 26px;
+       }
+    }
+
+    .footer-top {
+        padding-right: 0;
+    }
+
+    .copyright {
+        font-size: 14px;
+        a {
+            margin-right: 0;
+            &:first-child {
+                display: block;
+            }
+
+            &:nth-child(2) {
+                margin-right: 15px;
+            }
+        }
+    }
+
+}
+
+
+
+

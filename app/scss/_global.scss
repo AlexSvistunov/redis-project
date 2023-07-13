@@ -1,0 +1,38 @@
+body {
+    font-family: 'Noto Sans', sans-serif;
+    color: #080851;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 48px;
+}
+
+a {
+    color: inherit;
+}
+
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.main {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
+
+.container{
+    max-width: 1290px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.title {
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 65px;
+
+}
